@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mama Njeri - Menu and Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px auto;
+      padding: 0 16px;
+      max-width: 850px;
+      line-height: 1.5;
+    }
+    h1, h2 { color: #5f8062; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 28px;
+    }
+    caption {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    th, td {
+      border: 1px solid #777;
+      padding: 10px;
+      text-align: left;
+    }
+    th { background: #eeeeee; }
+    table img {
+      width: 110px;
+      height: 100px;
+      object-fit: cover;
+    }
+    fieldset {
+      margin: 14px 0;
+      padding: 16px;
+    }
+    label { display: inline-block; margin: 7px 0; }
+    input, select { margin: 5px 0 10px; padding: 7px; }
+    button {
+      padding: 9px 16px;
+      border: 0;
+      background: #5f8062;
+      color: white;
+      cursor: pointer;
+    }
+    .note {
+      color: rgb(95, 160, 124);
+      background: rgb(240, 245, 240);
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mama Njeri</h1>
+
+  <table>
+    <caption>MENU</caption>
+    <thead>
+      <tr>
+        <th>Dish</th>
+        <th>Price</th>
+        <th>Sample image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Pilau</td>
+        <td>KSh 350</td>
+        <td><img src="pilau.jpg" alt="A serving of pilau"></td>
+      </tr>
+      <tr>
+        <td>Ugali &amp; Sukuma</td>
+        <td>KSh 250</td>
+        <td><img src="ugali-sukuma.jpg" alt="Ugali served with sukuma wiki"></td>
+      </tr>
+      <tr>
+        <td>Chapati (2)</td>
+        <td>KSh 100</td>
+        <td><img src="chapati.jpg" alt="Chapati"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Place an Order</h2>
+  <form action="#" method="get">
+    <label for="dish">Select a dish:</label>
+    <input type="text" id="dish" name="dish" required>
+    <button type="submit">Submit order</button>
+  </form>
+
+  <h2>Student Registration</h2>
+  <form action="#" method="get">
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label for="firstname">First Name:</label><br>
+      <input type="text" id="firstname" name="firstname" required><br>
+
+      <label for="lastname">Last Name:</label><br>
+      <input type="text" id="lastname" name="lastname" required><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="phone">Phone Number:</label><br>
+      <input type="tel" id="phone" name="phone" required><br>
+
+      <label for="gender">Gender:</label><br>
+      <select id="gender" name="gender" required>
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select><br>
+
+      <label for="dob">Date of Birth:</label><br>
+      <input type="date" id="dob" name="dob" required><br>
+
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username" required><br>
+
+      <button type="submit">Register</button>
+    </fieldset>
+  </form>
+
+  <p class="note">This page demonstrates HTML forms and inline-style concepts. GitHub Pages hosts static websites; it does not process form submissions without a separate form service or backend.</p>
+</body>
+</html>
